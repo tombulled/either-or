@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Coin Toss App">
+
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="EitherOr">
+  <link rel="apple-touch-icon" href="icons/icon-460.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="icons/icon-460.png" sizes="460x460">
+
+  <title>EitherOr</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    html, body {
+      width: 100vw !important;
+      height: 100vh !important;
+      background-color: black;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let metaViewport = document.querySelector('meta[name="viewport"]');
+      metaViewport.content = "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover, height=device-height";
+    });
+  </script>
+</body>
+</html>

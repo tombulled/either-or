@@ -1,0 +1,28 @@
+{
+    "name": "EitherOr",
+    "short_name": "EitherOr",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "description": "Coin Toss App",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/icon-120.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+		},
+		{
+            "src": "icons/icon-460.png",
+            "sizes": "460x460",
+            "type": "image/png"
+        }
+    ]
+}
